@@ -63,11 +63,11 @@ output should be something similar:
 Verification complete: 6 entries verified.
 Final chain head hash: 063da6014d81273047f6a9c49bd910fdc95eae631cb135f9440c4ffb6c31cf7c
 
-14. Run insider program to simulate log being modified from a malicious person
+14. Run insider program to simulate log being modified from a malicious person:
 	./insider tamperlog.bin 4
 
-15. To read the logs in human language
+15. To read the logs in human language:
 	./read_logs tamperlog.bin
 
-16. To "reset" the logs for a fresh run
+16. To "reset" the logs for a fresh run:
 	rm tamperlog.bin prev_hash.bin
