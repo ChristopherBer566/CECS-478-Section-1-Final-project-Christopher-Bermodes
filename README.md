@@ -10,6 +10,7 @@ Important Notes
 * This project heavily utilized code and examples done in CECS 478 Lab 4 and Lab 5.
 * The use of ChatGPT was used for research and for help in making code involving hash chaining, verification, Makefile creation and CI pipeline creation.
 * DISCLAIMER: Makefile and CI pipeline where done ENTIRELY with ChatGPT and is untested. It is HIGHLY recommended to do commands manually.
+* ALPHA and BETA tests were conducted manually and NOT with the use of Makefile and CI pipeline code
 * Docker and Nano was used to code the project
 * Instructions will be done with the assuption that the user is using:
   - Windows OS computer
