@@ -1,0 +1,42 @@
+ CLIENT                SERVER
+------------      -----------------
+./client_tls ---> ./server_tls
+   |                   |
+   |   1. TLS Data     |
+   |------------------>|
+                       |
+                       v
+           +-------------------------+
+           |   hash_logger module    |
+           | append_log_entry(ip,msg)|
+           +-----------+-------------+
+                       |
+                       v
+    -----------------------------------------
+    | tamperlog.bin  |  prev_hash.bin        |
+    -----------------------------------------
+       Hash-chained     Stores last entry's
+       audit log         SHA-256 hash
+                      
+
+Offline Tools:
+- read_logs: Human-readable log viewer
+- verify_log: Recomputes hash-chain to detect tampering
+- insider: Simulated malicious insider who alters a log entry
+
+
+Vertical Slice Flow
+
+Client sends a TLS-encrypted request
+
+Server receives request and records events using tamper-evident hash-chained logging
+
+Logs are stored in binary format (tamperlog.bin, prev_hash.bin)
+
+read_logs displays human-readable entries
+
+verify_log recomputes the entire hash-chain to validate integrity
+
+insider tampers with message bytes
+
+verify_log detects the breach
