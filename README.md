@@ -19,6 +19,15 @@ Important Notes
   - C (gcc) and Openssl is installed on the same docker images
   - The user has downloaded files directly from this directory
  
+File structure:
+client_build_1.0.c          → TLS client
+server_build_1.0.c          → TLS server
+hash_logger_build_1.0.c/.h  → Hash-chained logging
+verify_log_build_1.0.c      → Hash chain verifier
+read_logs_build_1.0.c       → Binary log viewer
+insider_build_1.0.c         → Malicious log tampering tool
+server.crt / server.key     → TLS certificate & key
+ 
 User Instructions Manual run:
 1. Launch Docker deskstop application
 2. Locate the CECS478_C_Docker_Bundle in user's file explorer
