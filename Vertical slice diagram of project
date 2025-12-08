@@ -1,1 +1,17 @@
 request (client) → TLS encrypt/transport → server → tamper-evident log → verify/analyze → insider tamper → verify detects
+
+Vertical Slice Flow
+
+1.Client sends a TLS-encrypted request
+
+2.Server receives request and records events using tamper-evident hash-chained logging
+
+3.Logs are stored in binary format (tamperlog.bin, prev_hash.bin)
+
+4.read_logs displays human-readable entries
+
+5.verify_log recomputes the entire hash-chain to validate integrity
+
+6.insider tampers with message bytes
+
+7.verify_log detects the breach
