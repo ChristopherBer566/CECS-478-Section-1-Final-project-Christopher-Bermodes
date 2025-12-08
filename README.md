@@ -9,6 +9,7 @@ Important Notes
 * This project was coded in C
 * This project heavily utilized code and examples done in CECS 478 Lab 4 and Lab 5.
 * The use of ChatGPT was used for research and for help in making code involving hash chaining, verification, Makefile creation and CI pipeline creation.
+* DISCLAIMER: Makefile and CI pipeline where done ENTIRELY with ChatGPT and is untested. It is HIGHLY recommended to do commands manually.
 * Docker and Nano was used to code the project
 * Instructions will be done with the assuption that the user is using:
   - Windows OS computer
@@ -17,7 +18,7 @@ Important Notes
   - C (gcc) and Openssl is installed on the same docker images
   - The user has downloaded files directly from this directory
  
-User Instructions:
+User Instructions Manual run:
 1. Launch Docker deskstop application
 2. Locate the CECS478_C_Docker_Bundle in user's file explorer
 3. While in the CECS478_C_Docker_Bundle type "CMD" in the file pathway to open the folder in Command prompt
