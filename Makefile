@@ -41,8 +41,8 @@ test_hash_logger: test_hash_logger.c hash_logger_build_1.0.c hash_logger_build_1
 # Simple unit test for verify_log core
 # You can implement verify_log as a non-static function in verify_log_build_1.0.c
 # and include its prototype in a small header, or call the binary via system()
-test_verify_log: test_verify_log.c verify_log_build_1.0.c hash_logger_build_1.0.c hash_logger_build_1.0.h
-	$(CC) $(CFLAGS) -o $@ test_verify_log.c verify_log_build_1.0.c hash_logger_build_1.0.c $(LIBS_CRYPTO)
+test_verify_log: test_verify_log.c hash_logger_build_1.0.c hash_logger_build_1.0.h
+	$(CC) $(CFLAGS) -o $@ test_verify_log.c hash_logger_build_1.0.c $(LIBS_CRYPTO)
 
 # -------------------------------------------------------------------
 # Log reset helper
