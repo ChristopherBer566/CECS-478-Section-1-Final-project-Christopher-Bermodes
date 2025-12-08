@@ -44,19 +44,19 @@ User Instructions:
 	* gcc -o verify_log verify_log_build_1.0.c -lcrypto
    	* gcc -o read_logs read_logs_build_1.0.c -lcrypto
 
-9. run server in command line on first terminal
+9. run server in command line on first terminal:
 	* ./server_tls
 
-10.run monitor on 2nd terminal
-	* sudo tcpdump -i lo -w cecs478_final_project.pcap tcp port 4443
+10.run monitor on 2nd terminal:
+	* tcpdump -i lo -w cecs478_final_project.pcap tcp port 4443
 
-11. run client on 3rd terminal with user input message
+11. run client on 3rd terminal with user input message:
 	* ./client_tls "put message here"
 
-12. Check to see if tamper-evident log was created
+12. Check to see if tamper-evident log was created:
 	* ls -l tamperlog.bin prev_hash.bin
 
-13. Run verifier tool on any terminal (preferably on terminal that hosted the server)
+13. Run verifier tool on any terminal (preferably on terminal that hosted the server):
 	* ./verify_log tamperlog.bin
 
 output should be something similar:
