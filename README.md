@@ -27,16 +27,16 @@ User Instructions:
    docker exec -it cecs478c_attacker bash
 6. With in the /app directory copy files in main branch to the directory.
 7. Use OpenSSL to generate a certificate and private key for the server:
-     openssl genrsa -out server.key 2048
-     openssl req -new -x509 -key server.key -out server.crt -days 365
+    * openssl genrsa -out server.key 2048
+   	* openssl req -new -x509 -key server.key -out server.crt -days 365
 
      During prompts, you will enter:
-     Country Name: US
-     State: California
-     Locality: Long Beach
-     Organization: CECS478
-     Common Name: localhost
-     Email: studentname@csulb.edu
+     * Country Name: US
+     * State: California
+     * Locality: Long Beach
+     * Organization: CECS478
+     * Common Name: localhost
+     * Email: studentname@csulb.edu
 
 8. Compile code from this repository by typing:
     * gcc -o server_tls server_test_build_1.0.c hash_logger_build_1.0.c -lssl -lcrypto
