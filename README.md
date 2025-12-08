@@ -8,7 +8,7 @@ Implementing a evident-tampering log in a simulated message network.
 Important Notes
 * This project was coded in C
 * This project heavily utilized code and examples done in CECS 478 Lab 4 and Lab 5.
-* The use of ChatGPT was used for research and for help in making code involving hash chaining and verification.
+* The use of ChatGPT was used for research and for help in making code involving hash chaining, verification, Makefile creation and CI pipeline creation.
 * Docker and Nano was used to code the project
 * Instructions will be done with the assuption that the user is using:
   - Windows OS computer
