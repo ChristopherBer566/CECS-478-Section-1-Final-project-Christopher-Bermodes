@@ -1,0 +1,24 @@
+CECS 478 Final Project Manual Runbook:
+
+Environment Requirements
+* CECS Docker container
+* OpenSSL 3.x compatible environment
+
+Run the System Manually
+1. Start Server
+./server_tls
+
+2. In another terminal, send a message:
+./client_tls "Hello from runbook"
+
+3. View logs:
+./read_logs tamperlog.bin
+
+4. Verify logs:
+./verify_log tamperlog.bin
+
+5. Simulate insider tampering:
+./insider tamperlog.bin 3
+
+6. Verify again (should detect tampering):
+./verify_log tamperlog.bin
