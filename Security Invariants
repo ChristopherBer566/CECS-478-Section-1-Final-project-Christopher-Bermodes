@@ -1,0 +1,28 @@
+1.	Data integrity
+  a.	Maintained by:
+    i.	SHA-256 hash chaining
+    ii.	Perv_hash.bin: storing last chain head
+    iii.	Verify_logs recomputing full chain of event logs
+  b.	Integrity is maintained if:
+    i.	Hashes are correct
+    ii.	Every entry matches expected hash
+    iii.	If any byte is changed verification fails
+2.	Confidentiality
+  a.	Use of TLS handshake with the use of OpenSSL
+  b.	Encrypted communication between server and client
+  c.	Threats mitigated:
+    i.	MITM attacks
+    ii.	Passive sniffing
+    iii.	Replay messages
+3.	Log ordering
+  a.	Hash chaining creating forward only chain
+  b.	Verifier requires exact sequence match
+    i.	If attacker modifies entry N  Entry N + 1 fails verification 
+4.	Data handling protocols
+  a.	All logs stored in binary format to avoid accidental tampering
+  b.	No logs transmitted over the network
+  c.	Hash chain ensures integrity 
+  d.	Insider tool simulates unauthorized modification
+5.	Security validation strategy
+  a.	Verify_log – detects any log modifications
+  b.	Read_logs – confirms tamper detection 
