@@ -23,6 +23,16 @@ Offline Tools:
 - read_logs: Human-readable log viewer
 - verify_log: Recomputes hash-chain to detect tampering
 - insider: Simulated malicious insider who alters a log entry
+- test_hash_logger.c: Unit test for append_log_entry
+  Checks:
+   It succeeds on normal messages
+   It succeeds on an empty message (edge case)
+   It actually creates a non-empty tamperlog.bin
+- test_verify_log.c: Unit-ish test for the verify pipeline
+   Uses append_log_entry to create a small log, then:
+   Positive case: ./verify_log tamperlog.bin should succeed
+   Negative case: flip a byte in the log file, then ./verify_log should fail
+   This tests both the “clean chain” and “tampered chain” behavior.
 
 
 Vertical Slice Flow
