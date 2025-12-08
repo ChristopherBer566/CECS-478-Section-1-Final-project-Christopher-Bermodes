@@ -1,0 +1,1 @@
+request (client) → TLS encrypt/transport → server → tamper-evident log → verify/analyze → insider tamper → verify detects
