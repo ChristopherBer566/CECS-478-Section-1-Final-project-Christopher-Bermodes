@@ -37,16 +37,16 @@ Offline Tools:
 
 Vertical Slice Flow
 
-Client sends a TLS-encrypted request
+1.Client sends a TLS-encrypted request
 
-Server receives request and records events using tamper-evident hash-chained logging
+2.Server receives request and records events using tamper-evident hash-chained logging
 
-Logs are stored in binary format (tamperlog.bin, prev_hash.bin)
+3.Logs are stored in binary format (tamperlog.bin, prev_hash.bin)
 
-read_logs displays human-readable entries
+4.read_logs displays human-readable entries
 
-verify_log recomputes the entire hash-chain to validate integrity
+5.verify_log recomputes the entire hash-chain to validate integrity
 
-insider tampers with message bytes
+6.insider tampers with message bytes
 
-verify_log detects the breach
+7.verify_log detects the breach
