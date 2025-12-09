@@ -17,7 +17,7 @@
 3.	Log ordering
   a.	Hash chaining creating forward only chain
   b.	Verifier requires exact sequence match
-    i.	If attacker modifies entry N  Entry N + 1 fails verification 
+    i.	If attacker modifies entry N -> Entry N + 1 fails verification 
 4.	Data handling protocols
   a.	All logs stored in binary format to avoid accidental tampering
   b.	No logs transmitted over the network
