@@ -70,6 +70,7 @@ User Instructions Manual run:
 	  *  gcc -o client_tls client_test_build_1.0.c -lssl -lcrypto
 	  * gcc -o verify_log verify_log_build_1.0.c -lcrypto
    	* gcc -o read_logs read_logs_build_1.0.c -lcrypto
+	* gcc -o insider insider_build_1.0.c -lcrypto
 
 9. run server in command line on first terminal:
 	* ./server_tls
