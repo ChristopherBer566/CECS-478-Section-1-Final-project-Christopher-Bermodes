@@ -25,4 +25,4 @@
   d.	Insider tool simulates unauthorized modification
 5.	Security validation strategy
   a.	Verify_log – detects any log modifications
-  b.	Read_logs – confirms tamper detection 
+  b.	Read_logs – confirms tamper detection with human readable language
