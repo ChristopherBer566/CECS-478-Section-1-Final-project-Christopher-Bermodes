@@ -13,7 +13,7 @@
   c.	Threats mitigated:
     i.	MITM attacks
     ii.	Passive sniffing
-    iii.	Replay messages
+    iii. Replay messages
 3.	Log ordering
   a.	Hash chaining creating forward only chain
   b.	Verifier requires exact sequence match
