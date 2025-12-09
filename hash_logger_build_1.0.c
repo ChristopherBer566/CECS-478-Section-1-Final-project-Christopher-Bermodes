@@ -6,7 +6,7 @@
 #include <stdint.h>
 #include <openssl/evp.h>
 #include <openssl/sha.h>
-#include "hash_logger.h"
+#include "hash_logger_build_1.0.h"
 
 #define HASH_LEN 32  // SHA256
 #define LOG_PATH "tamperlog.bin"
