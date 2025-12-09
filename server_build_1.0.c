@@ -9,7 +9,7 @@
 #include <openssl/ssl.h>
 #include <openssl/err.h>
 
-#include "hash_logger.h"
+#include "hash_logger_build_1.0.h"
 
 #define PORT 4443
 #define MAX_BUFFER 1024
