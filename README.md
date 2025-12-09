@@ -9,7 +9,7 @@ Important Notes
 * This project was coded in C
 * This project heavily utilized code and examples done in CECS 478 Lab 4 and Lab 5.
 * The use of ChatGPT was used for research and for help in making code involving hash chaining, verification, Makefile creation and CI pipeline creation.
-* DISCLAIMER: Makefile and CI pipeline where done ENTIRELY with ChatGPT and is untested. It is HIGHLY recommended to do commands manually.
+* DISCLAIMER: Makefile and CI pipeline where done ENTIRELY with ChatGPT. At the current version Makefile does work and can perform demos and tests. However, it is HIGHLY recommended to do commands manually for clarity and readability.
 * ALPHA and BETA tests were conducted manually and NOT with the use of Makefile and CI pipeline code
 * Docker and Nano was used to code the project
 * Instructions will be done with the assuption that the user is using:
@@ -27,6 +27,7 @@ File structure:
 * read_logs_build_1.0.c       → Binary log viewer
 * insider_build_1.0.c         → Malicious log tampering tool
 * server.crt / server.key     → TLS certificate & key
+* test_hash_logger.c / test_verify_log.c        → offline tools that assists with ALPHA and BETA testing
  
 User Instructions Manual run:
 1. Launch Docker deskstop application
