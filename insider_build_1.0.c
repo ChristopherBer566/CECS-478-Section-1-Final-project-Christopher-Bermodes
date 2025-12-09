@@ -137,4 +137,3 @@ int main(int argc, char *argv[]) {
     return tampered ? EXIT_SUCCESS : EXIT_FAILURE;
 }
 
-
