@@ -26,3 +26,5 @@ What’s next in current build:
 3.	Stronger insider attack models
   a.	Timestamp manipulation
   b.	Header tampering
+
+4. Signed Chained heads of hash chains
