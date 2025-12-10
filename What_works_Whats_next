@@ -9,9 +9,9 @@ What works in current build:
   b.	prev_hash.bin for secure chain continuation
 
 3.	Modify attack simulation
-  a.	insider.c modifies logs in tamperlog.bin
+  a.	insider_build_1.0.c modifies logs in tamperlog.bin
   b.	Attack breaks hash-chain integrity
-  c.	verify_log.c detects modification of logs
+  c.	verify_log_buid_1.0.c detects modification of logs
 
 4.	Human-readable log viewer
   a.	Shows message, timestamp, message, IP address, hash and sequence number
